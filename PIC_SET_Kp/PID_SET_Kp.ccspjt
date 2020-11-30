@@ -1,0 +1,47 @@
+[PROJECT]
+Target=E:\giao trinh\thuc tap microchip\projects\PIC_SET_Kp\PID_SET_Kp.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+[Target Data]
+FileList=PID_SET_Kp.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\PIC_SET_Kp\PID_SET_Kp]
+Type=4
+[mru-list]
+1=PID_SET_Kp.c
+[Units]
+Count=1
+1=PID_SET_Kp (main)
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=25-03-2019
+D1_L=6
+D1_L1=[57088]Project Opened.
+D1_L2=[57093]Started Editing.
+D1_L3=[57611]Stopped Editing.
+D1_L4=[58295]Started Editing.
+D1_L5=[58724]Stopped Editing.
+TotalEdit=6
+TotalDebug=0
+D1_E=6
+D1_D=0
+D1_L6=[60166]Project Closed.
+D2=12-04-2019
+D2_L=2
+D2_L1=[36546]Project Opened.
+D2_L2=[37377]Project Closed.
+
+[Opened Files]
+1=PID_SET_Kp.c
+t1=1
+2=..\..\..\..\bai tap vdk\4_Button\bài6\main6.c
+t2=1
+3=..\..\..\..\bai tap vdk\1_Led_blink\bài7\main7.c
+t3=1
+Count=3

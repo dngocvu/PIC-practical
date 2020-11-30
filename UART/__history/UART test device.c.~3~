@@ -1,0 +1,12 @@
+#include <UART test device.h>
+#use rs232(baud = 9600)
+void main()
+{
+   while(TRUE)
+   {
+      printf("hello");
+
+      //TODO: User Code
+   }
+
+}

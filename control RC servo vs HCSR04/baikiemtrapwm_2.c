@@ -1,0 +1,89 @@
+#include <baikiemtrapwm_2.h>
+
+
+//!//include "rc_servo_control_v2.h"
+//unsigned long      n = 0; // Bien dem dung cho ngat timer0
+unsigned long      dem = 0;
+#define trigger  pin_e2
+#define echo     pin_e1
+float kcs;
+//int i;
+
+#int_timer0
+void interupt_timer0 (){
+   set_timer0(131);
+ 
+   dem++;
+   
+}
+//!void tao_xung_trigger()
+//!{
+//!   
+//!   output_high(trigger);
+//!   delay_us(10);
+//!   output_low(trigger);
+//!   set_timer1(0);
+//!   while(!(input(echo)));
+//!   setup_timer_1(t1_internal|t1_div_by_4);
+//!   while(input(echo));
+//!   kcs = get_timer1();
+//!   setup_timer_1(t1_disabled);     
+//!}
+//!void Go_Straight()
+//!{
+//!   if(dem <= 39 ) output_high(PIN_B0);
+//!         if(dem <= 20) output_high(PIN_B1);
+//!         if(dem > 39 && dem < 400 ) output_low(PIN_B0);
+//!         if(dem > 20 && dem < 400 ) output_low(PIN_B1);
+//!         if(dem == 400 ) dem = 0;
+//!}
+//!Void Turn_Left()
+//!{
+//!   if(dem <= 39 ) output_high(PIN_B0);
+//!         if(dem <= 30) output_high(PIN_B1);
+//!         if(dem > 39 && dem < 400 ) output_low(PIN_B0);
+//!         if(dem > 30 && dem < 400 ) output_low(PIN_B1);
+//!         if(dem == 400 ) dem = 0;
+//!}
+void main()
+{
+
+   setup_adc_ports(NO_ANALOGS|VSS_VDD);
+   setup_adc(ADC_CLOCK_DIV_2);
+   setup_spi(SPI_SS_DISABLED);
+   setup_timer_0(T0_INTERNAL|T0_DIV_2);////////
+   //setup_timer_1(T1_DISABLED);
+   setup_timer_2(T2_DISABLED,0,1);
+   setup_comparator(NC_NC);// This device COMP currently not supported by the PICWizard
+   enable_interrupts(INT_RTCC);
+   enable_interrupts(GLOBAL);
+
+
+   set_tris_c(0x00);
+   set_tris_e(0x02);
+   while(true){
+   	 if(dem <= 39 ) output_high(PIN_B0);
+         if(dem <= 20) output_high(PIN_B1);
+         if(dem > 39 && dem < 400 ) output_low(PIN_B0);
+         if(dem > 20 && dem < 400 ) output_low(PIN_B1);
+         if(dem == 400 ) dem = 0;
+    //  delay_ms(5);
+//!      Go_Straight();
+//!      tao_xung_trigger();
+//!      kcs=kcs*0.8;
+//!      kcs = (kcs/59);
+//!      if(kcs <= 40)
+//!      {
+//!         Turn_Left();
+//!         delay_ms(1000);
+//!         }
+//!      else 
+//!      {
+//!         Go_Straight();
+//!         
+//!   }
+//!
+//!
+   }
+   }
+

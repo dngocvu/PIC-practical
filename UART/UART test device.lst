@@ -1,0 +1,221 @@
+CCS PCM C Compiler, Version 5.078, 43599               04-Mar-19 13:49
+
+               Filename:   E:\giao trinh\thuc tap microchip\projects\UART\UART test device.lst
+
+               ROM used:   169 words (2%)
+                           Largest free fragment is 2048
+               RAM used:   7 (2%) at main() level
+                           11 (3%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   088
+0003:  NOP
+.................... #include <UART test device.h> 
+.................... #include <16F887.h> 
+.................... //////////// Standard Header file for the PIC16F887 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F887 
+0004:  DATA EF,35
+0005:  DATA 20,37
+0006:  DATA E9,31
+0007:  DATA 65,10
+0008:  DATA F4,37
+0009:  DATA A0,36
+000A:  DATA E5,32
+000B:  DATA 74,10
+000C:  DATA F9,37
+000D:  DATA 75,00
+*
+0030:  MOVF   0B,W
+0031:  MOVWF  22
+0032:  BCF    0B.7
+0033:  BSF    03.5
+0034:  BSF    03.6
+0035:  BSF    0C.7
+0036:  BSF    0C.0
+0037:  NOP
+0038:  NOP
+0039:  BCF    03.5
+003A:  BCF    03.6
+003B:  BTFSC  22.7
+003C:  BSF    0B.7
+003D:  BSF    03.6
+003E:  MOVF   0C,W
+003F:  ANDLW  7F
+0040:  BTFSC  03.2
+0041:  GOTO   084
+0042:  BCF    03.6
+0043:  MOVWF  22
+0044:  BSF    03.6
+0045:  MOVF   0D,W
+0046:  BCF    03.6
+0047:  MOVWF  23
+0048:  BSF    03.6
+0049:  MOVF   0F,W
+004A:  BCF    03.6
+004B:  MOVWF  24
+004C:  MOVF   22,W
+004D:  MOVWF  25
+004E:  CALL   00E
+004F:  MOVF   23,W
+0050:  BSF    03.6
+0051:  MOVWF  0D
+0052:  BCF    03.6
+0053:  MOVF   24,W
+0054:  BSF    03.6
+0055:  MOVWF  0F
+0056:  BCF    03.6
+0057:  MOVF   0B,W
+0058:  MOVWF  25
+0059:  BCF    0B.7
+005A:  BSF    03.5
+005B:  BSF    03.6
+005C:  BSF    0C.7
+005D:  BSF    0C.0
+005E:  NOP
+005F:  NOP
+0060:  BCF    03.5
+0061:  BCF    03.6
+0062:  BTFSC  25.7
+0063:  BSF    0B.7
+0064:  BSF    03.6
+0065:  RLF    0C,W
+0066:  RLF    0E,W
+0067:  ANDLW  7F
+0068:  BTFSC  03.2
+0069:  GOTO   084
+006A:  BCF    03.6
+006B:  MOVWF  22
+006C:  BSF    03.6
+006D:  MOVF   0D,W
+006E:  BCF    03.6
+006F:  MOVWF  23
+0070:  BSF    03.6
+0071:  MOVF   0F,W
+0072:  BCF    03.6
+0073:  MOVWF  24
+0074:  MOVF   22,W
+0075:  MOVWF  25
+0076:  CALL   00E
+0077:  MOVF   23,W
+0078:  BSF    03.6
+0079:  MOVWF  0D
+007A:  BCF    03.6
+007B:  MOVF   24,W
+007C:  BSF    03.6
+007D:  MOVWF  0F
+007E:  INCF   0D,F
+007F:  BTFSC  03.2
+0080:  INCF   0F,F
+0081:  BCF    03.6
+0082:  GOTO   030
+0083:  BSF    03.6
+0084:  BCF    03.6
+0085:  BCF    0A.3
+0086:  BCF    0A.4
+0087:  GOTO   0A7 (RETURN)
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+.................... #use rs232(baud = 9600) 
+*
+000E:  BSF    03.5
+000F:  BCF    05.0
+0010:  BCF    03.5
+0011:  BCF    05.0
+0012:  MOVLW  08
+0013:  MOVWF  78
+0014:  GOTO   015
+0015:  NOP
+0016:  BSF    78.7
+0017:  GOTO   026
+0018:  BCF    78.7
+0019:  RRF    25,F
+001A:  BTFSC  03.0
+001B:  BSF    05.0
+001C:  BTFSS  03.0
+001D:  BCF    05.0
+001E:  BSF    78.6
+001F:  GOTO   026
+0020:  BCF    78.6
+0021:  DECFSZ 78,F
+0022:  GOTO   019
+0023:  GOTO   024
+0024:  NOP
+0025:  BSF    05.0
+0026:  MOVLW  A7
+0027:  MOVWF  04
+0028:  DECFSZ 04,F
+0029:  GOTO   028
+002A:  GOTO   02B
+002B:  BTFSC  78.7
+002C:  GOTO   018
+002D:  BTFSC  78.6
+002E:  GOTO   020
+002F:  RETURN
+.................... void main() 
+*
+0088:  MOVF   03,W
+0089:  ANDLW  1F
+008A:  MOVWF  03
+008B:  BSF    03.5
+008C:  BCF    05.0
+008D:  BCF    03.5
+008E:  BSF    05.0
+008F:  CLRF   21
+0090:  CLRF   20
+0091:  BSF    03.5
+0092:  BSF    03.6
+0093:  MOVF   09,W
+0094:  ANDLW  C0
+0095:  MOVWF  09
+0096:  BCF    03.6
+0097:  BCF    1F.4
+0098:  BCF    1F.5
+0099:  MOVLW  00
+009A:  BSF    03.6
+009B:  MOVWF  08
+009C:  BCF    03.5
+009D:  CLRF   07
+009E:  CLRF   08
+009F:  CLRF   09
+00A0:  BCF    03.7
+.................... { 
+....................  
+....................    printf("ok nice to meet you"); 
+00A1:  MOVLW  04
+00A2:  MOVWF  0D
+00A3:  MOVLW  00
+00A4:  MOVWF  0F
+00A5:  BCF    03.6
+00A6:  GOTO   030
+....................    while(TRUE) 
+....................    { 
+00A7:  GOTO   0A7
+....................       //printf("hello"); 
+....................  
+....................       //TODO: User Code 
+....................    } 
+....................  
+.................... } 
+00A8:  SLEEP
+
+Configuration Fuses:
+   Word  1: 2FE2   HS NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT IESO FCMEN NOLVP NODEBUG
+   Word  2: 3FFF   BORV40 NOWRT

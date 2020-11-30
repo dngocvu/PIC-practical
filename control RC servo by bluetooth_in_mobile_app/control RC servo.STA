@@ -1,0 +1,48 @@
+
+ROM used:   81/8192 (1%)
+            81/8192 (1%) including unused fragments
+
+            0.1 Average locations per line
+            6.2 Average locations per statement
+
+RAM used:   6/368 (2%) at main() level
+            6/368 (2%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   24    13 100  control RC servo.c
+    5     0   0  control RC servo.h
+  786     0   0  C:\Program Files (x86)\PICC\Devices\16F887.h
+----- -----
+  815    13 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     77  95    0    277  2.3  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              13
+    Comments                135
+    Volume (V)              280
+    Difficulty (D)          2.2
+    Effort to implement (E) 627
+    Time to implement (T)   1 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    62
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF    77  1967  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

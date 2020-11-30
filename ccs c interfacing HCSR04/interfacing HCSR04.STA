@@ -1,0 +1,55 @@
+
+ROM used:   615/8192 (8%)
+            615/8192 (8%) including unused fragments
+
+            0.7 Average locations per line
+            21.2 Average locations per statement
+
+RAM used:   9/368 (2%) at main() level
+            23/368 (6%) worst case
+
+Stack used: 1 worst case (1 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   80    29 100  interfacing HCSR04.c
+    5     0   0  interfacing HCSR04.h
+  786     0   0  C:\Program Files (x86)\PICC\Devices\16F887.h
+----- -----
+  871    29 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     20   3    1             @delay_ms1
+0     81  13    0    250  3.2  tao_xung_trigger
+ Inline         2             @ITOF
+0     16   3    0     67  1.2  set_up_port_ic_chot
+0    106  17    0    257  3.9  MAIN
+0    119  19   13     67  1.2  @MULFF
+0    204  33   14    257  3.9  @DIVFF
+0     65  11   10             @FLT
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               5
+    Statements              29
+    Comments                159
+    Volume (V)              1319
+    Difficulty (D)          12.9
+    Effort to implement (E) 16997
+    Time to implement (T)   16 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   2
+    Maintainability (MI)    145
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   611  1433  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

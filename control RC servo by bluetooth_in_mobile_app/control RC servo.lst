@@ -1,0 +1,139 @@
+CCS PCM C Compiler, Version 5.078, 43599               25-Feb-19 15:16
+
+               Filename:   E:\giao trinh\thuc tap microchip\projects\control RC servo.lst
+
+               ROM used:   81 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   6 (2%) at main() level
+                           6 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   004
+0003:  NOP
+.................... #include <control RC servo.h> 
+.................... #include <16F887.h> 
+.................... //////////// Standard Header file for the PIC16F887 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F887 
+....................  
+.................... #list 
+....................  
+.................... #device ADC=10 
+.................... #use delay(crystal=20000000) 
+....................  
+....................  
+....................   
+.................... void main(void) 
+0004:  MOVF   03,W
+0005:  ANDLW  1F
+0006:  MOVWF  03
+0007:  MOVLW  FF
+0008:  MOVWF  20
+0009:  BSF    03.5
+000A:  BSF    03.6
+000B:  MOVF   09,W
+000C:  ANDLW  C0
+000D:  MOVWF  09
+000E:  BCF    03.6
+000F:  BCF    1F.4
+0010:  BCF    1F.5
+0011:  MOVLW  00
+0012:  BSF    03.6
+0013:  MOVWF  08
+0014:  BCF    03.5
+0015:  CLRF   07
+0016:  CLRF   08
+0017:  CLRF   09
+0018:  BCF    03.7
+.................... {  
+....................   
+....................  set_tris_c(0x00); 
+0019:  MOVLW  00
+001A:  BSF    03.5
+001B:  BCF    03.6
+001C:  MOVWF  07
+001D:  BCF    03.5
+001E:  MOVWF  20
+....................  set_tris_d(0x00); 
+001F:  BSF    03.5
+0020:  MOVWF  08
+....................  output_c(0x00); 
+0021:  BCF    03.5
+0022:  MOVWF  20
+0023:  BSF    03.5
+0024:  CLRF   07
+0025:  BCF    03.5
+0026:  CLRF   07
+....................  output_d(0x00); 
+0027:  BSF    03.5
+0028:  CLRF   08
+0029:  BCF    03.5
+002A:  CLRF   08
+....................  setup_ccp1(ccp_pwm); 
+002B:  BCF    20.2
+002C:  MOVF   20,W
+002D:  BSF    03.5
+002E:  MOVWF  07
+002F:  BCF    03.5
+0030:  BCF    07.2
+0031:  MOVLW  0C
+0032:  MOVWF  17
+0033:  BSF    03.5
+0034:  CLRF   1B
+0035:  CLRF   1C
+0036:  MOVLW  01
+0037:  MOVWF  1D
+....................  setup_ccp2(ccp_pwm); 
+0038:  BCF    03.5
+0039:  BCF    20.1
+003A:  MOVF   20,W
+003B:  BSF    03.5
+003C:  MOVWF  07
+003D:  BCF    03.5
+003E:  BCF    07.1
+003F:  MOVLW  0C
+0040:  MOVWF  1D
+....................  setup_timer_2(t2_div_by_16,255,1); 
+0041:  MOVLW  00
+0042:  MOVWF  78
+0043:  IORLW  06
+0044:  MOVWF  12
+0045:  MOVLW  FF
+0046:  BSF    03.5
+0047:  MOVWF  12
+....................  set_pwm1_duty(0); 
+0048:  BCF    03.5
+0049:  CLRF   15
+....................  set_pwm2_duty(0); 
+004A:  CLRF   1B
+....................  set_pwm1_duty(123); 
+004B:  MOVLW  7B
+004C:  MOVWF  15
+....................  set_pwm2_duty(255); 
+004D:  MOVLW  FF
+004E:  MOVWF  1B
+....................  while(1)  
+....................  { 
+004F:  GOTO   04F
+....................   
+....................  } 
+.................... } 
+....................   
+0050:  SLEEP
+....................  
+
+Configuration Fuses:
+   Word  1: 2FE2   HS NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT IESO FCMEN NOLVP NODEBUG
+   Word  2: 3FFF   BORV40 NOWRT

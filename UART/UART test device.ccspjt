@@ -1,0 +1,51 @@
+[PROJECT]
+Target=UART test device.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+CCSVersion=5.078
+[Target Data]
+FileList=UART test device.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\UART\UART test device]
+Type=4
+[mru-list]
+1=UART test device.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=3
+D1=04-03-2019
+D1_L=4
+D1_L1=[49264]Project Opened.
+D1_L2=[49269]Started Editing.
+D1_L3=[50063]Stopped Editing.
+TotalEdit=9
+TotalDebug=0
+D1_E=9
+D1_D=0
+D1_L4=[62035]Project Closed.
+D2=08-03-2019
+D2_L=2
+D2_L1=[43447]Project Opened.
+D2_L2=[43954]Project Closed.
+D3=09-03-2019
+D3_L=2
+D3_L1=[34485]Project Opened.
+D3_L2=[34662]Project Closed.
+
+[Opened Files]
+1=UART test device.c
+t1=1
+Count=1
+[UART test device.c]
+Type=4
+
+[defines]
+buildcount=3
+[Units]
+Count=1
+1=UART test device (main)

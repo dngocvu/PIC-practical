@@ -1,0 +1,45 @@
+[PROJECT]
+Target=bluetooth_driving_exam.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+CCSVersion=5.078
+[Target Data]
+FileList=bluetooth_driving_exam.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\control RC go strth\bluetooth_driving_exam]
+Type=4
+[mru-list]
+1=bluetooth_driving_exam.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=25-03-2019
+D1_L=6
+D1_L1=[39047]Project Opened.
+D1_L2=[39050]Started Editing.
+D1_L3=[39570]Stopped Editing.
+TotalEdit=4
+TotalDebug=0
+D1_E=4
+D1_D=0
+D1_L4=[40132]Project Closed.
+D1_L5=[57016]Project Opened.
+D1_L6=[57088]Project Closed.
+
+[Opened Files]
+1=bluetooth_driving_exam.c
+t1=13
+Count=1
+[bluetooth_driving_exam.c]
+Type=4
+[Units]
+Count=1
+1=bluetooth_driving_exam (main)
+
+[defines]
+buildcount=1

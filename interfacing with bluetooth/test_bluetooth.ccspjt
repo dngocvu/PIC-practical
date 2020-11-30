@@ -1,0 +1,35 @@
+[PROJECT]
+Target=E:\giao trinh\thuc tap microchip\projects\interfacing with bluetooth\test_bluetooth.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+[Target Data]
+FileList=test_bluetooth.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\interfacing with bluetooth\test_bluetooth]
+Type=4
+[mru-list]
+1=test_bluetooth.c
+[Units]
+Count=1
+1=test_bluetooth (main)
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=11-03-2019
+D1_L=6
+D1_L1=[47595]Project Opened.
+D1_L2=[48130]Project Closed.
+D1_L3=[48628]Project Opened.
+D1_L4=[53835]Project Closed.
+D1_L5=[54304]Project Opened.
+D1_L6=[54720]Project Closed.
+
+[Opened Files]
+1=test_bluetooth.c
+t1=1
+Count=1

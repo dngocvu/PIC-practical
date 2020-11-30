@@ -1,0 +1,38 @@
+[PROJECT]
+Target=interfacing HCSR04.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+CCSVersion=5.078
+[Target Data]
+FileList=interfacing HCSR04.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\ccs c interfacing HCSR04\interfacing HCSR04]
+Type=4
+[mru-list]
+1=interfacing HCSR04.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=25-02-2019
+D1_L=3
+D1_L1=[55909]Project Opened.
+D1_L2=[55931]Started Editing.
+D1_L3=[56626]Project Closed.
+
+[Opened Files]
+1=interfacing HCSR04.c
+t1=59
+Count=1
+[interfacing HCSR04.c]
+Type=4
+
+[defines]
+buildcount=3
+[Units]
+Count=1
+1=interfacing HCSR04 (main)

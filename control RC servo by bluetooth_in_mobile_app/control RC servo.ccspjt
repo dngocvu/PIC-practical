@@ -1,0 +1,53 @@
+[PROJECT]
+Target=control RC servo.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+CCSVersion=5.078
+[Target Data]
+FileList=control RC servo.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\control RC servo]
+Type=4
+[mru-list]
+1=control RC servo.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=25-02-2019
+D1_L=14
+D1_L1=[49559]Project Opened.
+D1_L2=[50740]Started Editing.
+D1_L3=[51067]Stopped Editing.
+D1_L4=[51208]Started Editing.
+D1_L5=[51518]Stopped Editing.
+D1_L6=[51956]Started Editing.
+D1_L7=[52520]Stopped Editing.
+D1_L8=[52688]Started Editing.
+D1_L9=[54039]Stopped Editing.
+D1_L10=[54118]Started Editing.
+D1_L11=[55050]Stopped Editing.
+TotalEdit=39
+TotalDebug=0
+D1_E=39
+D1_D=0
+D1_L12=[55050]Project Closed.
+D1_L13=[55130]Project Opened.
+D1_L14=[55146]Project Closed.
+
+[Opened Files]
+1=control RC servo.c
+t1=1
+Count=1
+[control RC servo.c]
+Type=4
+
+[defines]
+buildcount=62
+[Units]
+Count=1
+1=control RC servo (main)

@@ -1,0 +1,6 @@
+青UART test device
+   青main  0/33  Ram=0
+      団@cinit1  (Inline)  Ram=0
+      青@PSTRINGC7_644  0/88  Ram=4
+         団@PUTCHAR_1_  0/34  Ram=1
+         青@PUTCHAR_1_  0/34  Ram=1

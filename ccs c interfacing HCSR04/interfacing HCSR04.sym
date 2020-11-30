@@ -1,0 +1,88 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-023 kcs
+024-027 @MULFF.P1
+024-025 @ITOF.P2
+024     @delay_ms1.P3
+024-027 @FLT.P4
+024-027 @DIVFF.P5
+028-02B @FLT.P1
+028-02B @DIVFF.P2
+028-02B @MULFF.P3
+02C     @MULFF.@SCRATCH1
+02C     @DIVFF.@SCRATCH1
+02C     @FLT.@SCRATCH1
+02D     @MULFF.@SCRATCH2
+02D     @DIVFF.@SCRATCH2
+02D     @FLT.@SCRATCH2
+02E     @MULFF.@SCRATCH3
+02E     @DIVFF.@SCRATCH3
+02F     @MULFF.@SCRATCH4
+02F     @DIVFF.@SCRATCH4
+030     @MULFF.@SCRATCH5
+030     @DIVFF.@SCRATCH5
+031     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  set_up_port_ic_chot
+000014  @delay_ms1
+000028  tao_xung_trigger
+000051  @ITOF
+000079  @MULFF
+0000F0  @DIVFF
+0001BC  @FLT
+0001FD  MAIN
+0001FD  @cinit1
+00020F  @cinit2
+
+Project Directory:
+    E:\giao trinh\thuc tap microchip\projects\ccs c interfacing HCSR04\
+
+Project Files:
+    interfacing HCSR04.c                                    [25-Feb-19 15:41  CRC=38AC9696]
+    interfacing HCSR04.h                                    [25-Feb-19 15:31  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F887.h            [02-Apr-18 08:19  CRC=9C71CB72]
+
+Source signature=71902D7A
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=5C9B
+
+Units:
+    interfacing HCSR04 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   interfacing HCSR04.xsym
+    Errors:      interfacing HCSR04.err
+    Ext Symbols: interfacing HCSR04.esym
+    INHX8:       interfacing HCSR04.hex
+    Symbols:     interfacing HCSR04.sym
+    List:        interfacing HCSR04.lst
+    Debug/COFF:  interfacing HCSR04.cof
+    Project:     interfacing HCSR04.ccspjt
+    Call Tree:   interfacing HCSR04.tre
+    Statistics:  interfacing HCSR04.STA

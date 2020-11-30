@@ -1,0 +1,60 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+000018  @cinit2
+
+Project Directory:
+    E:\giao trinh\thuc tap microchip\projects\
+
+Project Files:
+    control RC servo.c                                      [25-Feb-19 15:16  CRC=5BC2252D]
+    control RC servo.h                                      [25-Feb-19 13:45  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F887.h            [02-Apr-18 08:19  CRC=9C71CB72]
+
+Source signature=94A5BC11
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=1908
+
+Units:
+    control RC servo (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   control RC servo.xsym
+    Errors:      control RC servo.err
+    Ext Symbols: control RC servo.esym
+    INHX8:       control RC servo.hex
+    Symbols:     control RC servo.sym
+    List:        control RC servo.lst
+    Debug/COFF:  control RC servo.cof
+    Project:     control RC servo.ccspjt
+    Call Tree:   control RC servo.tre
+    Statistics:  control RC servo.STA

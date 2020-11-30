@@ -1,0 +1,87 @@
+#include <interfacing HCSR04.h>
+
+#include <interfacing HCSR04.h>
+//#USE        rs232(baud=9600, xmit=PIN_C6,rcv=PIN_C7)
+//NUT NHAN:
+#DEFINE  BT0     PIN_B5
+#DEFINE  BT1     PIN_A4
+#DEFINE  BT2     PIN_B3
+#DEFINE  BT3     PIN_B2
+
+#DEFINE  ON      BT0    //DK LED DON, MOTOR
+#DEFINE  OFF     BT1
+#DEFINE  INV     BT2
+
+#DEFINE  UP      BT0    //DK LED DON
+#DEFINE  DW      BT1
+#DEFINE  CLR     BT2
+#DEFINE  MOD     BT3
+
+#DEFINE  STOP    BT3
+
+#DEFINE  ON1     BT0     
+#DEFINE  OFF1    BT1
+#DEFINE  ON2     BT2       
+#DEFINE  OFF2    BT3
+/*
+#FUSES      NOWDT,PUT,HS,NOPROTECT,NOLVP,CPUDIV1
+#USE        DELAY(CLOCK=20000000)
+#USE        I2C(MASTER,SLOW,SDA=PIN_B0,SCL=PIN_B1)
+#DEVICE     ADC=10
+*/
+
+
+#define trigger  pin_e2
+#define echo     pin_e1
+
+float kcs;
+
+
+void tao_xung_trigger()
+{
+   delay_ms(10);
+   output_high(trigger);
+   delay_ms(10);
+   output_low(trigger);
+   
+   set_timer1(0);
+   while(!(input(echo)));
+   setup_timer_1(t1_internal|t1_div_by_4);
+   
+   while(input(echo));
+   kcs = get_timer1();
+   setup_timer_1(t1_disabled);
+   
+   
+}
+
+
+void set_up_port_ic_chot()
+{
+   SET_TRIS_D(0x00);
+   SET_TRIS_E(0x00);
+   SET_TRIS_A(0x10);
+   OUTPUT_D(0xff);
+}
+void main()
+{
+   set_up_port_ic_chot();
+   setup_timer_1(t1_disabled);
+   while(TRUE)
+   {  
+      tao_xung_trigger();
+      kcs=kcs*0.8;
+      kcs = (kcs/59);
+      //delay_ms(500);
+      if(kcs > 50)
+      {
+         output_high(BT1);
+         delay_ms(100);
+         output_low(BT1);
+         delay_ms(100);
+      }
+      //TODO: User Code
+   }
+
+}
+

@@ -1,0 +1,105 @@
+#include <control RC servo.h>
+ 
+void main(void)
+{ 
+ 
+ set_tris_c(0x00);
+ set_tris_d(0x00);
+ //set_tris_e(0x03);
+ output_c(0x00);
+ output_d(0x00);
+ setup_ccp1(ccp_pwm);
+ setup_ccp2(ccp_pwm);
+ setup_timer_2(t2_div_by_16,255,1);
+ set_pwm1_duty(40);
+ set_pwm2_duty(70);
+ 
+ set_pwm1_duty(70);
+ set_pwm2_duty(40);
+ while(1) // cau 1 
+ {
+ 
+ }
+}
+ 
+//! while(1)// cau 2
+//! { 
+//!  led = 128;
+//!  set_pwm1_duty(0);
+//!  set_pwm2_duty(0);
+//! while( input(pin_d3))
+//! {
+//!  while(input(pin_d3));
+//!  while(1)
+//!  {
+//!   set_pwm1_duty(led);
+//!   set_pwm2_duty(led);
+//!   
+//!   if(input(pin_d4) == 1  & led <= 255)
+//!   {
+//!     while(input(pin_d4));
+//!     led = led + 25;
+//!   }
+//!   if(input(pin_d5) == 1  & led >= 0)
+//!   {
+//!     while(input(pin_d5));
+//!     led = led - 25;
+//!   }
+//!   
+//!   while(input(pin_d3) )
+//!   {
+//!   while(input(pin_d3) );
+//!   break;
+//!   }
+//!  }
+//!  set_pwm1_duty(0);
+//!  set_pwm2_duty(0);
+//!  }
+//! }
+ 
+//! while(1) // cau 3
+//! {
+//!  led = 128; 
+//!  j = 0;
+//!  set_pwm1_duty(0);
+//!  set_pwm2_duty(0);
+//!  while(input(pin_d3))
+//!  {
+//!    while(input(pin_d3));
+//!    while(1)
+//!    {
+//!     set_pwm1_duty(led);
+//!     set_pwm2_duty(led); 
+//!     
+//!     if(input(pin_d4))
+//!     {
+//!       while(input(pin_d4));
+//!       if( j == 0)
+//!       {
+//!         output_c(0xff);
+//!         j = 1;
+//!       }
+//!       else
+//!       {
+//!         output_c(0x00);
+//!         j = 0;
+//!       }    
+//!     }
+//!    if(input(pin_d5))
+//!    {
+//!      while(input(pin_d5));
+//!      if( led = 248) led = 62;
+//!      else led = led + 62;
+//!    }
+//!    if(input(pin_d3))
+//!     {
+//!      while(input(pin_d3));
+//!      break;
+//!     }
+//!    }
+//!  set_pwm1_duty(0);
+//!  set_pwm2_duty(0);
+//!  }
+//! }
+
+

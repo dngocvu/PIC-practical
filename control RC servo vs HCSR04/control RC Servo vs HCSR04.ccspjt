@@ -1,0 +1,55 @@
+[PROJECT]
+Target=control RC Servo vs HCSR04.hex
+Processor_Text=PIC16F887
+CCSVerions=5.078
+Compiler=PCM
+CCSVersion=5.078
+[Target Data]
+FileList=control RC Servo vs HCSR04.c
+[Directories]
+Include=
+[E:\giao trinh\thuc tap microchip\projects\control RC servo vs HCSR04\control RC Servo vs HCSR04]
+Type=4
+[mru-list]
+1=control RC Servo vs HCSR04.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=25-02-2019
+D1_L=8
+D1_L1=[55628]Project Opened.
+D1_L2=[55909]Project Closed.
+D1_L3=[56889]Project Opened.
+D1_L4=[57035]Started Editing.
+D1_L5=[59471]Stopped Editing.
+D1_L6=[59876]Started Editing.
+D1_L7=[61562]Stopped Editing.
+TotalEdit=59
+TotalDebug=0
+D1_E=59
+D1_D=0
+D1_L8=[62513]Project Closed.
+D2=04-03-2019
+D2_L=2
+D2_L1=[49135]Project Opened.
+D2_L2=[49151]Project Closed.
+
+[Opened Files]
+1=control RC Servo vs HCSR04.c
+t1=30
+Count=3
+2=..\ccs c interfacing HCSR04\interfacing HCSR04.c
+t2=47
+3=..\control RC servo\control RC servo.c
+t3=1
+[control RC Servo vs HCSR04.c]
+Type=4
+
+[defines]
+buildcount=57
+[Units]
+Count=1
+1=control RC Servo vs HCSR04 (main)

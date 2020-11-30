@@ -1,0 +1,5 @@
+Compiling E:\giao trinh\thuc tap microchip\projects\control RC servo vs HCSR04\control RC Servo vs HCSR04 on 25-Feb-19 at 17:21
+>>> Warning 202 "control RC Servo vs HCSR04.c" Line 8(5,6): Variable never used:   i
+      Memory usage:   ROM=8%      RAM=3% - 7%
+      0 Errors,  1 Warnings.
+Build Successful.

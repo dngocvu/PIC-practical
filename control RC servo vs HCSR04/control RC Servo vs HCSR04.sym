@@ -1,0 +1,93 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-023 kcs
+024     i
+025     @TRIS_C
+026-029 @FLT.P1
+026-027 @ITOF.P2
+026-029 @DIVFF.P3
+026-029 @MULFF.P4
+026     Turn_Left.@SCRATCH1
+027     @delay_ms1.P1
+02A-02D @DIVFF.P1
+02A-02D @FLT.P2
+02A-02D @MULFF.P3
+02E     @MULFF.@SCRATCH1
+02E     @DIVFF.@SCRATCH1
+02E     @FLT.@SCRATCH1
+02F     @MULFF.@SCRATCH2
+02F     @DIVFF.@SCRATCH2
+02F     @FLT.@SCRATCH2
+030     @MULFF.@SCRATCH3
+030     @DIVFF.@SCRATCH3
+031     @MULFF.@SCRATCH4
+031     @DIVFF.@SCRATCH4
+032     @MULFF.@SCRATCH5
+032     @DIVFF.@SCRATCH5
+033     @DIVFF.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  set_up_port_ic_chot
+00001A  Go_Straight
+00003F  tao_xung_trigger
+000067  @ITOF
+00008F  @MULFF
+000106  @DIVFF
+0001D2  @FLT
+000213  Turn_Left
+000238  @delay_ms1
+000250  MAIN
+000250  @cinit1
+000264  @cinit2
+
+Project Directory:
+    E:\giao trinh\thuc tap microchip\projects\control RC servo vs HCSR04\
+
+Project Files:
+    control RC Servo vs HCSR04.c                            [25-Feb-19 17:21  CRC=22FD0158]
+    control RC Servo vs HCSR04.h                            [25-Feb-19 15:27  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F887.h            [02-Apr-18 08:19  CRC=9C71CB72]
+
+Source signature=5BE0983C
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=35D4
+
+Units:
+    control RC Servo vs HCSR04 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   control RC Servo vs HCSR04.xsym
+    Errors:      control RC Servo vs HCSR04.err
+    Ext Symbols: control RC Servo vs HCSR04.esym
+    INHX8:       control RC Servo vs HCSR04.hex
+    Symbols:     control RC Servo vs HCSR04.sym
+    List:        control RC Servo vs HCSR04.lst
+    Debug/COFF:  control RC Servo vs HCSR04.cof
+    Project:     control RC Servo vs HCSR04.ccspjt
+    Call Tree:   control RC Servo vs HCSR04.tre
+    Statistics:  control RC Servo vs HCSR04.STA

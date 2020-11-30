@@ -1,0 +1,13 @@
+ÀÄinterfacing HCSR04
+   ÀÄMAIN  0/106  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port_ic_chot  0/16  Ram=0
+      ÃÄtao_xung_trigger  0/81  Ram=0
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÃÄ@delay_ms1  0/20  Ram=1
+      ³  ÀÄ@ITOF  (Inline)  Ram=2
+      ÃÄ@MULFF  0/119  Ram=13
+      ÃÄ@DIVFF  0/204  Ram=14
+      ÃÄ@FLT  0/65  Ram=10
+      ÃÄ@delay_ms1  0/20  Ram=1
+      ÀÄ@delay_ms1  0/20  Ram=1

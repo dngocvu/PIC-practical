@@ -1,0 +1,5 @@
+Compiling E:\giao trinh\thuc tap microchip\projects\PIC_SET_Kp\PID_SET_Kp on 25-Mar-19 at 16:13
+*** Error 48 "PID_SET_Kp.c" Line 9(6,18): Expecting a (
+*** Error 12 "PID_SET_Kp.c" Line 16(15,27): Undefined identifier  Distance WF_SR04_Left
+*** Error 12 "PID_SET_Kp.c" Line 17(26,37): Undefined identifier   WF_DISTANCE
+*** Error 12 "PID_SET_Kp.c" Line 18(5,18): Undefined identifier   WF_Correction
